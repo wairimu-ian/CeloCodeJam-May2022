@@ -8,7 +8,7 @@ const kit =  contracKit.newKitFromWeb3(web3)
 
 const getAccount = require('./utils/getAccount').getAccount
 
-async function awaitWrapper(){
+async function awaitWrapper (){
     let account = await getAccount()
     console.log(`Account address: ${account.address}`)
     kit.addAccount(account.privateKey)
